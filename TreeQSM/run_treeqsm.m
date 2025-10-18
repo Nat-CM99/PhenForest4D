@@ -21,7 +21,7 @@ function run_treeqsm(resultsPath, lasFilesPath)
             % Define other inputs
             inputs = define_input(P, 1, 1, 1);
             inputs.OnlyTree = 1;
-            inputs.plot = 0; % 0 no plot, 1 plot QSM, 2 + função de afilamento
+            inputs.plot = 0; % 0 no plot, 1 plot QSM
             inputs.name = fileName;
 
             % Print the filename (inputs.name) for this iteration
@@ -39,4 +39,5 @@ function run_treeqsm(resultsPath, lasFilesPath)
             continue; % Continue to the next iteration
         end
     end
+
 end
